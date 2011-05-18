@@ -1,0 +1,14 @@
+%p#notice= notice
+%p
+  %b Title:
+  = @tab.title
+%p
+  %b Band:
+  = @tab.band
+%p
+  %b Body:
+  %pre
+    = @tab.body
+= link_to 'Edit', edit_tab_path(@tab)
+|
+\#{link_to 'Back', tabs_path}

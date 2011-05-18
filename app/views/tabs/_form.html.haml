@@ -1,0 +1,11 @@
+= simple_form_for(@tab) do |f|
+  .field
+    = f.input :title
+  .field
+    = f.input :band
+  .field
+    = f.input :body
+  .field
+    = f.input :source, :label => "Original source reference"
+  .actions
+    = f.submit
