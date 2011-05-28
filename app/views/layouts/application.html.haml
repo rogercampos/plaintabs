@@ -6,4 +6,8 @@
     = javascript_include_tag :defaults
     = csrf_meta_tag
   %body
+    .menu
+      = link_to "Tabs", tabs_path
+      |
+      = link_to "Tags", tags_path
     = yield
